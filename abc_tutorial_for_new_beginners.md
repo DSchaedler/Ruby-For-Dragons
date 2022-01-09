@@ -2,7 +2,7 @@
 title: ABC Tutorial for new Beginners
 layout: default
 resource: true
-categories: [docs]
+categories: [Tutorials]
 ---
 
 _By Dee Schaedler_
