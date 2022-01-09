@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-resource: true
+resource: false
 categories: [Wiki]
 ---
 {% include header.html %}
