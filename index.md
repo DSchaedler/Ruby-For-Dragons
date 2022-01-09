@@ -3,6 +3,7 @@ title: Ruby for Dragons - Home
 tags: 
 keywords: 
 last_updated: January 09, 2022
+sidebar: mydoc_sidebar
 summary: ""
 ---
 
