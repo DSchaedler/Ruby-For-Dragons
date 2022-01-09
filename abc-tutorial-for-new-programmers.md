@@ -374,7 +374,7 @@ To Review:
 
 # Step 5 - Variables
 
-`Variables` are a type of container that we can use to hold information. In order to make a `variable`, we first have to pick a name. A `variable`'s name should describe what it is going to be used for.
+`Variables` containers that we use to hold information. In order to make a `variable`, we first have to pick a name. A `variable`'s name should describe what it is going to be used for.
 
 First, let's clean up our code so that only the `sprite` is left on screen.
 
