@@ -1,24 +1,13 @@
 ---
-resource: true
-categories: [docs]
+title: Home
 ---
 
-{% for cat in site.category-list %}
-### {{ cat }}
+<h2>{{ site.data.samplelist.docs_list_title }}</h2>
 <ul>
-{% for page in site.pages %}
-{% if page.resource == true %}
-{% for pc in page.categories %}
-{% if pc == cat %}
-<li>
-  <a href="{{ page.url }}">{{ page.title }}</a> &mdash; {{ page.desc }}
-</li>
-{% endif %} <!-- cat-match-p -->
-{% endfor %} <!-- page-category -->
-{% endif %} <!-- resource-p -->
-{% endfor %} <!-- page -->
+   {% for item in site.data.samplelist.docs %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
 </ul>
-{% endfor %} <!-- cat -->
 
 Welcome to the Ruby for Dragons wiki!
 
