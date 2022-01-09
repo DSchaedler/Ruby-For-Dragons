@@ -463,3 +463,5 @@ To Review:
 ***
 
 To be Continued...
+
+{% include footer.html %}
