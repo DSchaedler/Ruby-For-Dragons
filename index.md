@@ -1,7 +1,8 @@
 ---
 title: Home
 layout: default
-
+resource: true
+categories: [docs]
 ---
 
 {% for cat in site.category-list %}
