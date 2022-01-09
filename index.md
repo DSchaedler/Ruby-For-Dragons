@@ -8,9 +8,9 @@ categories: [Wiki]
 
 Welcome to the Ruby for Dragons wiki!
 
-If you don't have any programming experience, we suggest you start on the [ABC Tutorial for New Programmers](https://github.com/DSchaedler/Ruby_for_Dragons/wiki/ABC-Tutorial-for-New-Programmers).
+If you don't have any programming experience, we suggest you start on the [ABC Tutorial for New Programmers](/Ruby_for_Dragons/abc_tutorial_for_new_beginners).
 
-If you have programming experience, we recommend you start with the [Ruby on Wings](https://github.com/DSchaedler/Ruby_for_Dragons/wiki/Ruby-on-Wings) page. Even if you've used Ruby before, reading this page will help you understand how to use it with DragonRuby.
+If you have programming experience, we recommend you start with the [Ruby on Wings](/Ruby_for_Dragons/Ruby-on-Wings) page. Even if you've used Ruby before, reading this page will help you understand how to use it with DragonRuby.
 
 **The official documentation for DragonRuby is at http://docs.dragonruby.org**  
 Join the community discord for more help: [http://discord.dragonruby.org/](http://discord.dragonruby.org/) (It's where most of this information is from).
