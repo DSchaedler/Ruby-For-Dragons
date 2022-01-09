@@ -1,0 +1,12 @@
+{% for cat in site.category-list %}
+### {{ cat }}
+{% for page in site.pages %}
+{% if page.resource == true %}
+{% for pc in page.categories %}
+{% if pc == cat %}
+<a href="/Ruby_for_Dragons{{ page.url }}">{{ page.title }}</a> &mdash; {{ page.desc }}
+{% endif %} <!-- cat-match-p -->
+{% endfor %} <!-- page-category -->
+{% endif %} <!-- resource-p -->
+{% endfor %} <!-- page -->
+{% endfor %} <!-- cat -->
