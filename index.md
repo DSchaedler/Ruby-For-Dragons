@@ -13,7 +13,7 @@ categories: [docs]
 {% for pc in page.categories %}
 {% if pc == cat %}
 <li>
-  <a href="{{ page.url }}">{{ page.title }}</a> &mdash; {{ page.desc }}
+  <a href="/Ruby_for_Dragons{{ page.url }}">{{ page.title }}</a> &mdash; {{ page.desc }}
 </li>
 {% endif %} <!-- cat-match-p -->
 {% endfor %} <!-- page-category -->
