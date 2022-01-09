@@ -1,12 +1,2 @@
 theme: jekyll-theme-midnight
-docs_list_title: ACME Documentation
-docs:
-
-- title: Home
-  url: index.html
-
-- title: ABC Tutorial for Absolute Beginners
-  url: abc_tutorial.html
-
-- title: Deployment
-  url: deployment.html
+category-list: [docs]
