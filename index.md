@@ -2,7 +2,7 @@
 title: Home
 layout: default
 resource: true
-categories: [docs]
+categories: [wiki]
 ---
 
 {% for cat in site.category-list %}
