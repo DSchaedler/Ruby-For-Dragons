@@ -1,9 +1,8 @@
 ---
 title: ABC Tutorial for new Beginners
-tags: 
-keywords: 
-last_updated: January 09, 2022
-summary: ""
+layout: default
+resource: true
+categories: [docs]
 ---
 
 _By Dee Schaedler_
