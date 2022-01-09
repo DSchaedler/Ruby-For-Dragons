@@ -2,25 +2,8 @@
 title: Home
 layout: default
 resource: true
-categories: [wiki]
+categories: [Wiki]
 ---
-
-{% for cat in site.category-list %}
-### {{ cat }}
-<ul>
-{% for page in site.pages %}
-{% if page.resource == true %}
-{% for pc in page.categories %}
-{% if pc == cat %}
-<li>
-  <a href="/Ruby_for_Dragons{{ page.url }}">{{ page.title }}</a> &mdash; {{ page.desc }}
-</li>
-{% endif %} <!-- cat-match-p -->
-{% endfor %} <!-- page-category -->
-{% endif %} <!-- resource-p -->
-{% endfor %} <!-- page -->
-</ul>
-{% endfor %} <!-- cat -->
 
 Welcome to the Ruby for Dragons wiki!
 
@@ -58,3 +41,20 @@ The DragonRuby community is amazingly helpful and friendly, and the community di
 This wiki is a consolidation of the community coming together to organize those cheat sheets and libraries into one, easy to navigate location.
 
 The "Ruby on Wings" page was originally contributed by Kniknoo, and does an excellent job onboarding new Dragonriders. Other contributions are credited above each page/code block.
+
+{% for cat in site.category-list %}
+### {{ cat }}
+<ul>
+{% for page in site.pages %}
+{% if page.resource == true %}
+{% for pc in page.categories %}
+{% if pc == cat %}
+<li>
+  <a href="/Ruby_for_Dragons{{ page.url }}">{{ page.title }}</a> &mdash; {{ page.desc }}
+</li>
+{% endif %} <!-- cat-match-p -->
+{% endfor %} <!-- page-category -->
+{% endif %} <!-- resource-p -->
+{% endfor %} <!-- page -->
+</ul>
+{% endfor %} <!-- cat -->
