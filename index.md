@@ -4,6 +4,7 @@ layout: default
 resource: true
 categories: [Wiki]
 ---
+{% include header.html %}
 
 Welcome to the Ruby for Dragons wiki!
 
