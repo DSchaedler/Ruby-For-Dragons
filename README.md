@@ -1,3 +1,22 @@
+---
+title: Home
+layout: default
+resource: true
+categories: [Wiki]
+---
+{% include header.html %}
+
+Welcome to the Ruby for Dragons wiki!
+
+If you don't have any programming experience, we suggest you start on the [ABC Tutorial for New Programmers](/Ruby_for_Dragons/abc_tutorial_for_new_programmers).
+
+If you have programming experience, we recommend you start with the [Ruby on Wings](/Ruby_for_Dragons/Ruby-on-Wings) page. Even if you've used Ruby before, reading this page will help you understand how to use it with DragonRuby.
+
+**The official documentation for DragonRuby is at [http://docs.dragonruby.org](http://docs.dragonruby.org)**  
+Join the community discord for more help: [http://discord.dragonruby.org/](http://discord.dragonruby.org/) (It's where most of this information is from).
+
+***
+
 # Ruby_for_Dragons
 An unofficial companion to the DragonRuby documentation
 
@@ -27,3 +46,5 @@ This wiki is a consolidation of the community coming together to organize those 
 The “Ruby on Wings” page was originally contributed by Kniknoo, and does an excellent job onboarding new Dragonriders. Other contributions are credited above each page/code block.
 
 The wiki is hosted through Github Pages, and therefore uses Jekyll to serve content. There is an unplubilished template page in the root of the github repo. Copy the template to a new file and change `resource: ` to `true` to publish the page. New pages are automatically indexed in the sitemap.
+
+{% include footer.html %}
