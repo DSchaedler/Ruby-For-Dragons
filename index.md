@@ -1,3 +1,8 @@
+---
+layout: page
+title: Home
+---
+
 Welcome to the Ruby for Dragons wiki!
 
 If you don't have any programming experience, we suggest you start on the [ABC Tutorial for New Programmers](https://github.com/DSchaedler/Ruby_for_Dragons/wiki/ABC-Tutorial-for-New-Programmers).
