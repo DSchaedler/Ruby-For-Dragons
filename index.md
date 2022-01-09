@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: Wiki Home
 ---
 
 Welcome to the Ruby for Dragons wiki!
