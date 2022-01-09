@@ -1,3 +1,11 @@
+---
+title: ABC Tutorial for new Beginners
+tags: 
+keywords: 
+last_updated: January 09, 2022
+summary: ""
+---
+
 _By Dee Schaedler_
 
 This tutorial assumes that you have never programmed before. If you have programming experience, the [Ruby on Wings tutorial](https://github.com/DSchaedler/Ruby_for_Dragons/wiki/Ruby-on-Wings) will provide an overview of the Ruby language for use with DragonRuby.
