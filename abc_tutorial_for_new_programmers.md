@@ -1,5 +1,5 @@
 ---
-title: ABC Tutorial for new Beginners
+title: ABC Tutorial for New Programmers
 layout: default
 resource: true
 categories: [Tutorials]
