@@ -1,7 +1,7 @@
 ---
 title: Ruby for Dragons
 desc: An unofficial companion to the DragonRuby documentation.
-layout: wiki
+layout: default
 resource: true
 categories: [Wiki]
 ---
