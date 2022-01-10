@@ -1,5 +1,6 @@
 ---
 title: DragonRuby API Documentation
+desc: Listing of methods and objects available in the engine.
 layout: default
 resource: true
 categories: [Docs]
