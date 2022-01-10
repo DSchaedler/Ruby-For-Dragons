@@ -1,11 +1,10 @@
 ---
 title: Ruby for Dragons
 desc: An unofficial companion to the DragonRuby documentation.
-layout: default
+layout: wiki
 resource: true
 categories: [Wiki]
 ---
-{% include header.html %}
 
 Welcome to the Ruby for Dragons wiki!
 
