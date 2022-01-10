@@ -1,5 +1,6 @@
 ---
-title: Home
+title: Ruby for Dragons
+desc: An unofficial companion to the DragonRuby documentation.
 layout: default
 resource: true
 categories: [Wiki]
@@ -16,9 +17,6 @@ If you have programming experience, we recommend you start with the [Ruby on Win
 Join the community discord for more help: [http://discord.dragonruby.org/](http://discord.dragonruby.org/) (It's where most of this information is from).
 
 ***
-
-# Ruby_for_Dragons
-An unofficial companion to the DragonRuby documentation
 
 ## Contributing
 This is a place to document anything developed for the DragonRuby community, that isn’t documented in the sample apps or official documentation. Anything published to this wiki will be considered Public Domain.
