@@ -1,5 +1,6 @@
 ---
 title: Sample Page
+desc: A sample description of the Sample Page
 layout: default
 resource: false
 categories: [Docs, Tutorials, Wiki]
@@ -13,6 +14,7 @@ _By Sample Author_
 
 Sample Markdown Text
 
-[Sample Link](/Ruby_for_Dragons/sample_link/)
+## Sample Header 2
 
-{% include footer.html %}
+[Sample Link](/Ruby_for_Dragons/template)
+
