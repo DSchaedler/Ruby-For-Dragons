@@ -267,7 +267,7 @@ p "%02d:%02d" % [7, 15]
   how few digits the number has. The d states that it will be a digit value, as opposed to a float. From
   there everything else is either literal or a variation of the above formula. So what happens if you
   want to actually us a "%" ? This is where we "escape" a character by prefixing it with an escape
-  character. In this case it will be "%" (%%) in most others it will be "\". For example:
+  character. In this case it will be "%" (%%) in most others it will be "\\". For example:
 
 ```rb
 p "Gotta give it %3d%%" % [110]
