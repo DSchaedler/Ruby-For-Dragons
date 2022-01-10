@@ -6,6 +6,8 @@ resource: true
 categories: [Wiki]
 ---
 
+{% include header.html %}
+
 Welcome to the Ruby for Dragons wiki!
 
 If you don't have any programming experience, we suggest you start on the [ABC Tutorial for New Programmers](/Ruby_for_Dragons/abc-tutorial-for-new-programmers).
