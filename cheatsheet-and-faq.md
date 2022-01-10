@@ -139,5 +139,3 @@ Comparisons to arrays:
 - '.size' exists (and `.length` might also exist as an alias)
 
 - `.merge` is useful. `newhash = hash1.merge(hash2)` will have hash2's values overrule hash1 where keys match (`.merge!` exists to over_write_ if needed)
-
-{% include footer.html %}
