@@ -12,24 +12,6 @@ _By Kniknoo_
 
 ***
 
-[Def](#methods)  
-[Array](#arrays)  
-[Variable](#variables)  
-[String](#strings)  
-[Numeric](#numerics)  
-[Boolean](#booleans)  
-[If/Unless/Case](#if-unless-and-case)  
-[While/Until](#while-and-until)  
-[Blocks](#beginning-blocks)  
-[Range/Step/Times](#ranges-and-step)  
-Map  
-Hash - ADV  
-Class - ADV  
-API Listing  
-
-
-
-
 # A Few Words about Ruby
   TODO Brief history and touch on ruby culture, including Matz and Why?
   TODO Overview of ruby paradigms. AKA What IS Ruby?
