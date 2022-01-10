@@ -1,5 +1,6 @@
 ---
 title: Code Blocks
+desc: Short, but powerful, drop-in code segments.
 layout: default
 resource: true
 categories: [Tutorials]
@@ -27,5 +28,3 @@ def randr(min, max)
 end
 
 ```
-
-{% include footer.html %}
