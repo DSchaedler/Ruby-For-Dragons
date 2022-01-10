@@ -1,5 +1,6 @@
 ---
 title: Cheatsheet & FAQ
+desc: Tips and Tricks to tame the Dragon.
 layout: default
 resource: true
 categories: [Tutorials]
