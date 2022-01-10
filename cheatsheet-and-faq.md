@@ -144,4 +144,4 @@ Comparisons to arrays:
 
 - '.size' exists (and `.length` might also exist as an alias)
 
-- `.merge` is useful. `newhash = hash1.merge(hash2)` will have hash2's values overrule hash1 where keys match (`.merge!` exists to *overwrite* if needed)
+- `.merge` is useful. `newhash = hash1.merge(hash2)` will have hash2's values overrule hash1 where keys match (`.merge!` does the same thing, but modifies the object it is called on)
