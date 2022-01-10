@@ -1,5 +1,6 @@
 ---
 title: Ruby on Wings
+desc: This tutorial is for programmers new to DragonRuby.
 layout: default
 resource: true
 categories: [Tutorials]
