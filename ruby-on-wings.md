@@ -763,4 +763,3 @@ p hex_to_rgb '#FF00FF'
 p rgb_to_hex [255, 0, 255]
 ```
 
-{% include footer.html %}
