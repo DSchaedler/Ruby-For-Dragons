@@ -20,16 +20,6 @@ I encourage you to take this tutorial in multiple sections, and across multiple 
 
 You've got this!
 
-## Table of Contents
-* [Step 0 - Install the Egine](/Ruby_for_Dragons/abc-tutorial-for-new-programmers#step-0---install-the-engine)
-* [Step 1 - Understanding the Sample Code](/Ruby_for_Dragons/abc-tutorial-for-new-programmers#step-1---understanding-the-sample-code)
-* [Step 2 - Hello World](/Ruby_for_Dragons/abc-tutorial-for-new-programmers#step-2---hello-world)
-  * [Step 2.5 - What about the other numbers?](/Ruby_for_Dragons/abc-tutorial-for-new-programmers#step-25---what-about-the-other-numbers)
-* [Step 3 - Putting a square on the screen](/Ruby_for_Dragons/abc-tutorial-for-new-programmers#step-3---putting-a-square-on-the-screen)
-* [Intermission - Code Editors](/Ruby_for_Dragons/abc-tutorial-for-new-programmers#intermission---code-editors)
-* [Step 4 - Our visual toolbox](/Ruby_for_Dragons/abc-tutorial-for-new-programmers#step-4---our-visual-toolbox)
-* [Step 5 - Variables](/Ruby_for_Dragons/abc-tutorial-for-new-programmers#step-5---variables)
-
 # Step 0 - Install the Engine
 You've come across DragonRuby somehow, and you have a desire to make a game. DragonRuby is a great choice for making games! It is lightweight, easy to iterate ideas in, and has an affectionate community.
 
