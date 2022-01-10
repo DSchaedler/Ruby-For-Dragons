@@ -7,6 +7,8 @@ categories: [Tutorials]
 
 {% include header.html %}
 
+{:toc}
+
 _By Dee Schaedler_
 
 This tutorial assumes that you have never programmed before. If you have programming experience, the [Ruby on Wings tutorial](/Ruby_for_Dragons/ruby-on-wings) will provide an overview of the Ruby language for use with DragonRuby.
