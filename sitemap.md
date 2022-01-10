@@ -1,8 +1,25 @@
 ---
 title: Sitemap
+desc: A full listing of published pages on the wiki.
 layout: default
 resource: true
 categories: [Wiki]
 ---
 {% include header.html %}
-{% include footer.html %}
+
+{% for cat in site.category-list %}
+### {{ cat }}
+<ul>
+{% for page in site.pages %}
+{% if page.resource == true %}
+{% for pc in page.categories %}
+{% if pc == cat %}
+<li>
+  <a href="/Ruby_for_Dragons{{ page.url }}">{{ page.title }}</a> &mdash; {{ page.desc }}
+</li>
+{% endif %} <!-- cat-match-p -->
+{% endfor %} <!-- page-category -->
+{% endif %} <!-- resource-p -->
+{% endfor %} <!-- page -->
+</ul>
+{% endfor %} <!-- cat -->
