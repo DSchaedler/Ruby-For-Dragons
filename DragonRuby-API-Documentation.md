@@ -198,5 +198,3 @@ categories: [Docs]
 `args.outputs.sprites << [x, y, width, height, 'path/sprite.png']`
 
 [Back to Top](/Ruby_for_Dragons/DragonRuby-API-Documentation)
-
-{% include footer.html %}
