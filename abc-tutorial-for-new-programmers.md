@@ -2,7 +2,7 @@
 title: ABC Tutorial for New Programmers
 desc: This tutorial assumes that you have never programmed before.
 layout: default
-resource: true
+published: true
 categories: [Tutorials]
 ---
 
