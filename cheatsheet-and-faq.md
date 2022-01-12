@@ -94,7 +94,7 @@ puts a          # [2, 6, 8, 4, 7]
 ```
 
 - `.append` adds to the end, `.prepend` adds to the beginning
-- << is another way of doing an append (which is often used in adding things to the outputs lists)
+- `<<` is another way of doing an append (which is often used in adding things to the outputs lists)
 - `.delete_at()` deletes a specific index
 - `.insert()` inserts a thing at a position
 
@@ -121,6 +121,11 @@ puts "I still need " +
      "to visit the " +
      "following cities:",
      cities - visited
+     
+# => I still need to visit the following cities:
+# => London
+# => Paris
+# => Amsterdam
 ```
 
 - Nested arrays are considered to be multi-dimensional, and have some tricks as well
@@ -139,4 +144,4 @@ Comparisons to arrays:
 
 - '.size' exists (and `.length` might also exist as an alias)
 
-- `.merge` is useful. `newhash = hash1.merge(hash2)` will have hash2's values overrule hash1 where keys match (`.merge!` exists to over_write_ if needed)
+- `.merge` is useful. `newhash = hash1.merge(hash2)` will have hash2's values overrule hash1 where keys match (`.merge!` does the same thing, but modifies the object it is called on)
