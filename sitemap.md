@@ -2,7 +2,7 @@
 title: Sitemap
 desc: A full listing of published pages on the wiki.
 layout: default
-resource: true
+published: true
 categories: [Wiki]
 ---
 {% include header.html %}
@@ -11,7 +11,7 @@ categories: [Wiki]
 ### {{ cat }}
 <ul>
 {% for page in site.pages %}
-{% if page.resource == true %}
+{% if page.published == true %}
 {% for pc in page.categories %}
 {% if pc == cat %}
 <li>
@@ -19,7 +19,7 @@ categories: [Wiki]
 </li>
 {% endif %} <!-- cat-match-p -->
 {% endfor %} <!-- page-category -->
-{% endif %} <!-- resource-p -->
+{% endif %} <!-- published-p -->
 {% endfor %} <!-- page -->
 </ul>
 {% endfor %} <!-- cat -->
