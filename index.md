@@ -44,4 +44,4 @@ This wiki is a consolidation of the community coming together to organize those 
 
 The “Ruby on Wings” page was originally contributed by Kniknoo, and does an excellent job onboarding new Dragonriders. Other contributions are credited above each page/code block.
 
-The wiki is hosted through Github Pages, and therefore uses Jekyll to serve content. There is an unplubilished template page in the root of the github repo. Copy the template to a new file and change `resource: ` to `true` to publish the page. New pages are automatically indexed in the sitemap.
+The wiki is hosted through Github Pages, and therefore uses Jekyll to serve content. There is an unplubilished template page in the root of the github repo. Copy the template to a new file and change `resource: ` to `true` to publish the page. New pages are automatically indexed in the sitemap. You can view the template at [https://ejectdrive.com/Ruby_for_Dragons/template](https://ejectdrive.com/Ruby_for_Dragons/template)
