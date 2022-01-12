@@ -2,7 +2,7 @@
 title: Sample Page
 desc: A sample description of the Sample Page
 layout: default
-resource: false
+published: false
 categories: [Docs, Tutorials, Wiki]
 ---
 
