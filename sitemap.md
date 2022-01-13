@@ -3,6 +3,7 @@ title: Sitemap
 desc: A full listing of published pages on the wiki.
 layout: default
 published: true
+indexed: true
 categories: [Wiki]
 ---
 {% include header.html %}
