@@ -3,6 +3,7 @@ title: Cheatsheet & FAQ
 desc: Tips and Tricks to tame the Dragon.
 layout: default
 published: true
+indexed: true
 categories: [Tutorials]
 ---
 
