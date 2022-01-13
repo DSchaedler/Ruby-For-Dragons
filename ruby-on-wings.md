@@ -3,6 +3,7 @@ title: Ruby on Wings
 desc: This tutorial is for programmers new to DragonRuby.
 layout: default
 published: true
+indexed: true
 categories: [Tutorials]
 ---
 
