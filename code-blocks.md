@@ -3,6 +3,7 @@ title: Code Blocks
 desc: Short, but powerful, drop-in code segments.
 layout: default
 published: true
+indexed: true
 categories: [Tutorials]
 ---
 
