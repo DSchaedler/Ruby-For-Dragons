@@ -456,4 +456,161 @@ To Review:
 
 ***
 
+# Step 6 - Inputs
+
+What we have right now isn't a game. It's hardly anything, just a picture showing on the screen. We need some way of interacting with the screen and what's on it in order for it to be considered a game.
+
+We'll start with the existing code for the dragon image:
+
+```ruby
+def tick args
+  x_position = 400
+  y_position = 300
+  width = 100
+  height = 100
+
+  path = 'sprites/misc/dragon-0.png'
+
+  args.outputs.sprites << [x_position, y_position, width, height, path]
+end
+```
+We can then ask the engine for where our mouse is on the screen.
+
+`args.inputs.mouse.x` is a way of telling the engine that we need information from it. In this case, the `x` or horizontal position of the mouse. Seeing this command, DragonRuby will give us a number representing the mouse's position on the imaginary grid. If we set the `x_position` variable equal to this, the variable will get its value from the mouse each tick, and the image will get its horizontal position from the variable. In this way, we can move the image on the screen by moving the mouse.
+
+```ruby
+def tick args
+  x_position = args.inputs.mouse.x
+  y_position = 300
+  width = 100
+  height = 100
+
+  path = 'sprites/misc/dragon-0.png'
+
+  args.outputs.sprites << [x_position, y_position, width, height, path]
+end
+```
+
+We can also do this for the `y` or vertical position of the mouse.
+
+
+```ruby
+def tick args
+  x_position = args.inputs.mouse.x
+  y_position = args.inputs.mouse.y
+  width = 100
+  height = 100
+
+  path = 'sprites/misc/dragon-0.png'
+
+  args.outputs.sprites << [x_position, y_position, width, height, path]
+end
+```
+
+Now, when you move your mouse, the dragon picture moves with it.
+
+You may have noticed that the mouse always stays slightly to the left and just under the image. That spot is where the lower left hand corner of the image is in the game files, and where the engine is starting to draw the image from. We can re-arrange some of the code to make the image center itself on the mouse.
+
+The first step is to move the `width` and `height` to the top of the code. Code is like a recipe. It is always run from top to bottom, and you cannot use something if you did not prepare it in a previous step.
+
+```ruby
+def tick args
+  width = 100
+  height = 100
+  
+  x_position = args.inputs.mouse.x
+  y_position = args.inputs.mouse.y
+
+  path = 'sprites/misc/dragon-0.png'
+
+  args.outputs.sprites << [x_position, y_position, width, height, path]
+end
+```
+
+Now we can use those values of width and height to determine how far we need to offset the image.
+
+```ruby
+def tick args
+  width = 100
+  height = 100
+  
+  offset_x = width / 2
+  offset_y = height / 2
+  
+  x_position = args.inputs.mouse.x
+  y_position = args.inputs.mouse.y
+
+  path = 'sprites/misc/dragon-0.png'
+
+  args.outputs.sprites << [x_position, y_position, width, height, path]
+end
+```
+
+And now, we can move the image using the calculated offset numbers. Remember that `args.inputs.mouse.x` is just giving us a number for where on the imaginary grid the mouse is. We can do math on that number just like any other number.
+
+```ruby
+def tick args
+  width = 100
+  height = 100
+  
+  offset_x = width / 2
+  offset_y = height / 2
+  
+  x_position = args.inputs.mouse.x - offset_x
+  y_position = args.inputs.mouse.y - offset_y
+
+  path = 'sprites/misc/dragon-0.png'
+
+  args.outputs.sprites << [x_position, y_position, width, height, path]
+end
+```
+
+Now the dragon is diligently following our mouse around the screen, and we can control them!
+
+***
+
+To Review:
+ - You cannot use information before it is written. Code is run from top to bottom.
+ - We can ask DragonRuby to give us information through `args.inputs`.
+ - Inputs are taken from special engine commands and provide numbers or other information we can use.
+ - Variables can be set equal to inputs.
+ - We can do math operations with the values provided by inputs.
+
+***
+
+# Intermission - Code length and readability
+
+Take another look at the code from the last example.
+
+```ruby
+def tick args
+  width = 100
+  height = 100
+  
+  offset_x = width / 2
+  offset_y = height / 2
+  
+  x_position = args.inputs.mouse.x - offset_x
+  y_position = args.inputs.mouse.y - offset_y
+
+  path = 'sprites/misc/dragon-0.png'
+
+  args.outputs.sprites << [x_position, y_position, width, height, path]
+end
+```
+
+Each line of this code is one very small step of what we want to happen. It is written so that it is easy to follow each step, and each step builds on the last one. This code is very "Readable". The code below does the same thing as everything above.
+
+```ruby
+def tick args
+  args.outputs.sprites << [args.inputs.mouse.x - 50, args.inputs.mouse.y - 50, 100, 100, 'sprites/misc/dragon-0.png']
+end
+```
+
+This code is very short, but it is hard to read. It doesn't explain what it is doing at all, and if you didn't already understand how moving the dragon works, you would have a hard time telling how it is doing it. This is a common trade off in programming. Short pieces of code are very impressive, but very hard to read and understand. More readable code will be longer and take up more space on your screen and computer.
+
+Generally, in Ruby, we like code to be readable. The Ruby language is all about making things easier and more readable for programmers. The length of your code almost never matters, so keeping it organized and readable is a good goal to keep. Remember that you will not be the only one reading your code. Anyone trying to help you, or work on what you've made will have to be able to read it later. That includes future versions of yourself.
+
+***
+
 To be Continued...
