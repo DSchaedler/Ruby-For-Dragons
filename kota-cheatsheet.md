@@ -1,6 +1,6 @@
 ---
 title: Kota's Cheatsheet
-desc: A sample description of the Sample Page
+desc: A quick collection of some of the most used features.
 layout: default
 published: true
 indexed: true
