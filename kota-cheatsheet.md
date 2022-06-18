@@ -97,3 +97,27 @@ args.outputs.labels << {
   size_enum: 0 # less than 0 is smaller, more than 0 is larger
 }
 ```
+
+## args.outputs.lines
+```rb
+args.outputs.lines << {
+  x: 0, y: 0, # point 1 coordinates
+  w: 100, h: 100, # relative coordinates
+  x2: 100, y2: 100, # point 2 coordinates
+  r: r, g: g, b: b, a: a,
+  x3: 200, y3: 200, # define a triangle
+  source_x2: x_from_image, source_y2: y_from_image, # triangle image fill
+  source_x3: x_from_image, source_y3: y_from_image
+}
+```
+
+## args.outputs.borders
+Same arguments as `solids`.
+```rb
+args.outputs.borders << {
+  x: x_pos, y: y_pos,
+  w: width, h: height,
+  r: red, g: green,
+  b: blue, a: alpha
+}
+```
