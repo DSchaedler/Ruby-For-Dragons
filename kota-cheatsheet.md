@@ -60,8 +60,40 @@ args.outputs.sprites << {
   source_h: h_from_image,
   flip_vertically: true_or_false,
   flip_horizontally: true_or_false,
-  angle_anchor_x: 0.3, # 0 is left, 1 is right, center of rotation
-  angle_anchor_y: 0.3, # 0 is left, 1 is right, center of rotation
-  blendmode_enum: 0 # See Blendmode Section
+  angle_anchor_x: 0.3, # 0 = left, 1 = right, center of rotation
+  angle_anchor_y: 0.3, # 0 = left, 1 = right, center of rotation
+  blendmode_enum: 0 # See blendmode section
+}
+```
+
+## args.outputs.primitives
+This example is for a `solid` primitive. Other types include
+
+```rb
+:solid
+:sprite
+:label
+:line
+:border
+```
+
+```rb
+args.outputs.primitives << {
+  x: x_pos, y: y_pos,
+  w: width, h: height,
+  r: red, g: green,
+  b: blue, a: alpha,
+  primitive_marker: :solid
+}
+```
+
+## args.outputs.labels
+```rb
+args.outputs.labels << {
+  x: x, y: y, r: r, g: g, b: b, a: a,
+  alignment_enum: 0, # 0 = left, 1 = center, 2 = right, horizontal alignment
+  vertical_alignment_enum: 0, # 0 = top, 1 = center, 2 = bottom
+  font: 'font.ttf', # path to font file
+  size_enum: 0 # less than 0 is smaller, more than 0 is larger
 }
 ```
