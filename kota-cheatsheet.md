@@ -49,6 +49,13 @@ args.outputs.solids << {
 }
 ```
 
+## args.outputs.solids (for triangles)
+```rb
+args.outputs.sprites << {
+  x: x, y: y, r: r, g: g, b: b, a: a,
+  x3: 200, y3: 200, # mark a triangle
+}```
+
 ## args.outputs.sprites
 ```rb
 args.outputs.sprites << {
@@ -66,6 +73,19 @@ args.outputs.sprites << {
   blendmode_enum: 0 # see blendmode section
 }
 ```
+
+## args.outputs.sprites (for triangles)
+```rb
+args.outputs.sprites << {
+  x: x, y: y, r: r, g: g, b: b, a: a,
+  x3: 200, y3: 200, # mark a triangle
+  path: 'sprites/circle/red.png', # path to the source image
+  source_x: x_from_image,  source_y: y_from_image,  # defaults to `0`
+  source_x2: x_from_image, source_y2: y_from_image, # triangle image fill (mandatory)
+  source_x3: x_from_image, source_y3: y_from_image,  # triangle image fill (mandatory)
+  blendmode_enum: 0 # see blendmode section (I'm unsure of this one)
+}```
+  
 
 ## args.outputs.primitives
 This example is for a `solid` primitive. Other types include
@@ -105,10 +125,7 @@ args.outputs.lines << {
   x: 0, y: 0, # point 1 coordinates
   w: 100, h: 100, # relative coordinates
   x2: 100, y2: 100, # point 2 coordinates
-  r: r, g: g, b: b, a: a,
-  x3: 200, y3: 200, # define a triangle
-  source_x2: x_from_image, source_y2: y_from_image, # triangle image fill
-  source_x3: x_from_image, source_y3: y_from_image
+  r: r, g: g, b: b, a: a
 }
 ```
 
@@ -127,6 +144,8 @@ args.outputs.borders << {
 To use a render target, use `args.outputs.sprites` with `:render_target_name` as the `path`.
 ```rb
 args.outputs[:render_target_name].primitives << some_primitive
+# alternatively
+args.render_target(:render_target_name).primitives << some_primitive
 
 args.outputs.sprites << {
   x: x, y: y, w: w, h: h, r: r, g: g, b: b, a: a,
@@ -142,7 +161,7 @@ args.state.game_name = "Name of the Game"
 
 # Fullscreen
 ```rb
-args.set_window_fullscreen_enabled = true
+args.gtk.set_window_fullscreen true # or false
 ```
 
 # Text Size
