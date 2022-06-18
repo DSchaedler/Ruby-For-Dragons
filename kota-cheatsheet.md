@@ -215,11 +215,11 @@ args.cursor_shown?
 ```
 
 # See Also
-[matrix](http://docs.dragonruby.org/#----advanced-rendering---15-matrix-and-triangles-2d---main-rb)
-[geometry](http://docs.dragonruby.org/#---args-geometry-)
-[grid](http://docs.dragonruby.org/#---args-grid-)
-[write_file](http://docs.dragonruby.org/#----args-gtk-write_file-path--contents-)
-[read_file](http://docs.dragonruby.org/#----args-gtk-read_file-path-)
-[audio](http://docs.dragonruby.org/#--docs---gtk--args#audio-)
-[server](http://docs.dragonruby.org/#----http---in-game-web-server-http-get---main-rb)
-[http](http://docs.dragonruby.org/#----args-gtk-http_get-url--extra_headers-=-{}-)
+[matrix](http://docs.dragonruby.org/#----advanced-rendering---15-matrix-and-triangles-2d---main-rb)  
+[geometry](http://docs.dragonruby.org/#---args-geometry-)  
+[grid](http://docs.dragonruby.org/#---args-grid-)  
+[write_file](http://docs.dragonruby.org/#----args-gtk-write_file-path--contents-)  
+[read_file](http://docs.dragonruby.org/#----args-gtk-read_file-path-)  
+[audio](http://docs.dragonruby.org/#--docs---gtk--args#audio-)  
+[server](http://docs.dragonruby.org/#----http---in-game-web-server-http-get---main-rb)  
+[http](http://docs.dragonruby.org/#----args-gtk-http_get-url--extra_headers-=-{}-)  
