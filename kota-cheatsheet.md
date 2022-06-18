@@ -3,7 +3,7 @@ title: Kota's Cheatsheet
 desc: A sample description of the Sample Page
 layout: default
 published: true
-indexed: false
+indexed: true
 categories: [Tutorials]
 ---
 
@@ -53,6 +53,7 @@ args.outputs.solids << {
 ```rb
 args.outputs.sprites << {
   x: x, y: y, w: w, h: h, r: r, g: g, b: b, a: a,
+  path: 'sprites/circle/red.png', # path to the source image
   angle: rotation_degrees,
   source_x: x_from_image,
   source_y: y_from_image,
@@ -62,7 +63,7 @@ args.outputs.sprites << {
   flip_horizontally: true_or_false,
   angle_anchor_x: 0.3, # 0 = left, 1 = right, center of rotation
   angle_anchor_y: 0.3, # 0 = left, 1 = right, center of rotation
-  blendmode_enum: 0 # See blendmode section
+  blendmode_enum: 0 # see blendmode section
 }
 ```
 
@@ -121,3 +122,104 @@ args.outputs.borders << {
   b: blue, a: alpha
 }
 ```
+
+## Render Targets
+To use a render target, use `args.outputs.sprites` with `:render_target_name` as the `path`.
+```rb
+args.outputs[:render_target_name].primitives << some_primitive
+
+args.outputs.sprites << {
+  x: x, y: y, w: w, h: h, r: r, g: g, b: b, a: a,
+  path: :render_target_name
+}
+```
+
+# State
+Store arbitrary data between ticks.
+```rb
+args.state.game_name = "Name of the Game"
+```
+
+# Fullscreen
+```rb
+args.set_window_fullscreen_enabled = true
+```
+
+# Text Size
+```rb
+w, h = args.gtk.calcstringbox(string, size_enum, path_to_font)
+```
+
+# Inputs
+## args.inputs.mouse
+```rb
+args.inputs.mouse = {
+  :x,
+  :y,
+  :click,
+  :down,
+  :previous_click,
+  :up,
+  :inside_rect?,
+  :inside_circle?,
+  :moved,
+  :button_left,
+  :button_right,
+  :button_middle,
+  :button_bits,
+  :wheel
+}
+```
+
+## Directional
+```rb
+args.inputs.left
+args.inputs.right
+args.inputs.up
+args.inputs.down
+```
+
+## args.inputs.keyboard
+```rb
+args.inputs.keyboard = {
+  :key_held.KEY,
+  :key_down.KEY,
+  :key_up.KEY,
+  :KEY,
+  :up_down,
+  :left_right,
+  :raw_key
+}
+```
+
+# Background Color
+```rb
+args.outputs.background_color = [red, green, blue]
+```
+
+# Sound Output
+Using an `.ogg` file will cause the sound to loop.
+```rb
+args.outputs.sound << 'sounds/file.ogg'
+```
+For non-looping sounds:
+```rb
+args.gtk.queue_sound << 'sounds/file.ogg'
+```
+
+# Cursor Controls
+```rb
+args.show_cursor
+args.hide_cursor
+args.cursor_shown?
+```
+
+# See Also
+[matrix](http://docs.dragonruby.org/#----advanced-rendering---15-matrix-and-triangles-2d---main-rb)
+[geometry](http://docs.dragonruby.org/#---args-geometry-)
+[grid](http://docs.dragonruby.org/#---args-grid-)
+[write_file](http://docs.dragonruby.org/#----args-gtk-write_file-path--contents-)
+[read_file](http://docs.dragonruby.org/#----args-gtk-read_file-path-)
+[audio](http://docs.dragonruby.org/#--docs---gtk--args#audio-)
+[server](http://docs.dragonruby.org/#----http---in-game-web-server-http-get---main-rb)
+[http](http://docs.dragonruby.org/#----args-gtk-http_get-url--extra_headers-=-{}-)
