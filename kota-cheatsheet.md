@@ -9,7 +9,7 @@ categories: [Tutorials]
 
 {% include header.html %}
 
-_Kota_
+_By Kota_
 
 # Basic App
 
